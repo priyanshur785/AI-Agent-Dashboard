@@ -19,4 +19,7 @@ This project is designed to showcase an AI-powered agent that automates web sear
 - **LLM**: Groq API via LangChain
 - **Others**: Tenacity for retry logic, dotenv for environment variable management.
 
+## Loom Video Link
+ Link: https://www.loom.com/share/3b770d83f301473b8992f18e9a9488cf?sid=ea2a0fae-4d01-4c13-8c02-14156a52b3b1
+
 
