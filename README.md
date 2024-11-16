@@ -71,6 +71,26 @@ Find the headquarters location of {organization}.
      Download CSV: Save the results locally as a CSV file.
      Update Google Sheet: Push the extracted results directly to the connected Google Sheet.
 
+## **API Keys and Environment Variables**
+
+### **API Keys**
+To enable the core functionalities of this project, the following API keys are required:
+
+1. **SerpAPI**  
+   - Used for performing automated web searches to retrieve relevant information.
+   - Obtain your API key by signing up at [SerpAPI](https://serpapi.com/).
+
+2. **Groq API**  
+   - Used as the LLM for processing search results and extracting specific information.
+   - Retrieve your API key by signing up on [Groq's platform](https://groq.com/).
+
+3. **Google Sheets API**  
+   - Used for real-time interaction with Google Sheets to fetch and update data.
+   - Follow these steps to enable and set up the Google Sheets API:
+     - Visit the [Google Cloud Console](https://console.cloud.google.com/).
+     - Enable the **Google Sheets API** for your project.
+     - Generate and download the credentials JSON file for your project.
+
 ## Loom Video Link
  Link: https://www.loom.com/share/3b770d83f301473b8992f18e9a9488cf?sid=ea2a0fae-4d01-4c13-8c02-14156a52b3b1
 
