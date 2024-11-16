@@ -35,11 +35,41 @@ Key technologies used include Python, Streamlit for the user interface, SerpAPI 
 ## **Setup Instructions**
 
 ### **1. Clone the Repository**
-Clone the project repository to your local system:
+-Clone the project repository to your local system
+### **2. Install Dependencies**
+-Ensure Python 3.9 or higher is installed
+### **2. Configure Environment Variables**
+-Create a .env file in the root of the project and add the following:
+  SERPAPI_KEY=<Your SerpAPI Key>
+  GOOGLE_SHEET_CREDENTIALS=<Path to your Google Sheets credentials JSON file>
+### **2. Run the Application**
+-Start the Streamlit dashboard:
+ streamlit run dashboard.py
 
-git clone <repository-link>
-cd <repository-folder>
+## **Usage Guide**
 
+### **1. Uploading a Dataset**
+- Launch the application using:
+  streamlit run dashboard.py
+- Navigate to the dashboard interface.
+- Use the "Browse" button to upload a CSV file. Alternatively, connect to a Google Sheet by 
+  entering the required credentials and authenticating access.
+-The uploaded data will be previewed in a table. Select the primary column you want to query 
+ (e.g., Company Names).
+### **2. Defining a Query**
+- Enter a custom query in the input box. Use curly braces {} as placeholders for dynamic replacement based on the column entities.
+Examples:
+Get the email address of {company}.
+Find the headquarters location of {organization}.
+### **3. Processing the Data**
+-Click the "Search" button to start processing.
+  The system will perform web searches using APIs and retrieve relevant results.
+  Results are processed by the Groq API to extract specific information based on your query.
+ ### **4. Viewing and Exporting Results**
+ -The results are displayed in a clean table format on the dashboard.
+  Export options:
+     Download CSV: Save the results locally as a CSV file.
+     Update Google Sheet: Push the extracted results directly to the connected Google Sheet.
 
 ## Loom Video Link
  Link: https://www.loom.com/share/3b770d83f301473b8992f18e9a9488cf?sid=ea2a0fae-4d01-4c13-8c02-14156a52b3b1
